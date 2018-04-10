@@ -9,7 +9,7 @@ var bodyParser = require('body-parser').urlencoded({
 //var argon2 = require('argon2')
 var multer = require('multer')
 var upload = multer({
- dest: 'static/images/'
+  dest: 'static/images/'
 })
 
 require('dotenv').config()
@@ -58,16 +58,16 @@ function signup(req, res) {
   var body = req.body
 
   connection.query('INSERT INTO users SET ?', {
-   img: req.file.filename ,
-   id: body.id,
-   name: body.name,
-   age: body.age,
-   sex: body.sex,
-   preference: body.preference,
-   wants: body.wants,
-   email: body.email,
-   password: body.password
-   }, done)
+    img: req.file.filename,
+    id: body.id,
+    name: body.name,
+    age: body.age,
+    sex: body.sex,
+    preference: body.preference,
+    wants: body.wants,
+    email: body.email,
+    password: body.password
+  }, done)
 
   function done(err, data) {
     if (err) throw err
@@ -150,7 +150,7 @@ function profile(req, res) {
       res.end('Niet ingelogd')
     } else {
       res.render('profile.ejs', {
-        user: users[0]
+        user: req.session.user
       })
     }
   }
