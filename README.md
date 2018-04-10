@@ -91,6 +91,7 @@ CREATE DATABASE IF NOT EXISTS mydatesite;
   PRIMARY KEY (id)
 );
   ```
+
   Table 2 :
   ```
   CREATE TABLE IF NOT EXISTS activity (
@@ -103,10 +104,22 @@ CREATE DATABASE IF NOT EXISTS mydatesite;
   PRIMARY KEY (id)
 );
 ```
+To view your tables you can type 
+```
+SELECT * FROM table_name;
+```
+You  can also select what you want to view for example 
+```
+SELECT name FROM users;
+```
+You can also select a row by (replace 1 with the id of the row you want to select)
+```
+SELECT * FROM users WHERE id = 1;
+```
 
 ### Use 50+Meeting
 Now you are ready to use the site, go to http://localhost:1905/. You can change the port in the index.js file if you want to.
 
 ## Licence
 
-[MIT]()
+[MIT](https://github.com/matsfeber/be-assessement-2/blob/master/license)
