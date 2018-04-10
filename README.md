@@ -8,4 +8,4 @@ The site is in dutch.
 ### Screens
 The first screen lets you log-in or if you dont have an account yet, sign-up.
 
-<img src="screens/home" width="250"
+![home](/screens/home.png =250x)
