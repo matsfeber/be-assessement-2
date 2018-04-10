@@ -23,3 +23,17 @@ On the activity page you can see activitys already created. You can click on an 
 <img src="screens/activiteiten.png" width="400">
 <img src="screens/detail.png" width="400">
 
+You can navigate to "toevoegen" to add an activity
+
+<img src="screens/Add.png" width="400">
+
+### Install
+
+Follow the following steps to install 50+Meeting
+
+1. Open your terminal
+2. Redirect to where you want to install 50+Meeting
+3. Clone the repository with the following code
+```
+
+```
