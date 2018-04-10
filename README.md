@@ -6,4 +6,6 @@ Meeting50+ is a datingsite for people above the age of 50. Instead of matching p
 The site is in dutch.
 
 ### Screens
+The first screen lets you log-in or if you dont have an account yet, sign-up.
 
+<img src="screens/home" width="250"
