@@ -1,0 +1,27 @@
+<%- include('head.ejs') %>
+
+<body>
+   <header>
+    <h1>Profiel</h1>
+    </header>
+
+    <div class='content'>
+     <img id="myPic" src="/images/<%= user.img %>">
+<h2 id='naam'> <%= user.name %> (<%= user.sex %>) </h2>
+
+  <p><b>Leeftijd :</b> <%= user.age %></p>
+  <p><b>Op zoek naar :</b> <%= user.wants %></p>
+  <p><b>Zoekt een :</b> <%= user.preference %></p>
+
+  <a class='button'href='/logOut'>Log uit</a>
+  <a class='button'href='/editPage'>Wijzig profile</a>
+
+  <form action='/remove/:id' method='GET'>
+    <button class='deleteBtn' type='submit'>Verwijder account</button>
+  </form>
+
+ </div>
+
+ <%- include('footer.ejs') %>
+</body>
+</html>

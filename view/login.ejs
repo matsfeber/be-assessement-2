@@ -1,0 +1,28 @@
+<%- include('head.ejs') %>
+<body>
+
+<header>
+  <h1>50+ Meeting</h1>
+  </header>
+<div class='content'>
+
+
+<h2>Login</h2>
+  <form action='/log-in' method='POST'>
+    <label>Email
+      <input type='text' name='email' required>
+    </label>
+
+    <label>Wachtwoord
+      <input type='password' name='password' required>
+    </label>
+    <button type='submit'>login</button>
+  </form>
+</div>
+
+
+<a href='/register'>Geen account? registreer!</a>
+
+
+</body>
+</html>

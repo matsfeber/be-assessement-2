@@ -1,0 +1,67 @@
+<%- include('head.ejs') %>
+<div class='content'>
+<header>
+  <h1>50+ Meeting</h1>
+</header>
+
+  <h2>Registreren</h2>
+
+  <form action=/sign-up method=post enctype="multipart/form-data">
+
+    <label>
+      <b>Naam</b>
+      <input name=name type='text' required>
+    </label>
+<hr>
+    <label>
+      <b>Leeftijd</b>
+      <input name=age type='number' required>
+    </label>
+<hr>
+    <label>
+      <b>Geslacht</b>
+      <input type='radio' name='sex' value='Man'required>Man<br>
+      <input type='radio' name='sex' value='Vrouw' required> Vrouw <br>
+    </label>
+<hr>
+
+<label>
+  <b>Voorkeur</b>
+  <input type='radio' name='preference' value='Man' required>Man<br>
+  <input type='radio' name='preference' value='Vrouw' required> Vrouw <br>
+  <input type='radio' name='preference' value='Beide' required> Beide <br>
+
+</label>
+<hr>
+
+<label>
+  <b>Op zoek naar</b>
+  <input type='radio' name='wants' value='Relatie' required>Relatie<br>
+  <input type='radio' name='wants' value='Vriendschap' required> Vriendschap <br>
+  <input type='radio' name='wants' value='Maakt niet uit' required> Maakt niet uit <br>
+
+</label>
+<hr>
+    <label>
+      <b>E-mail</b>
+      <input name=email type='text' required>
+    </label>
+<hr>
+    <label>
+      <b>Wachtwoord</b>
+      <input name=password type=password required>
+    </label>
+
+    <label> <b>Profielfoto</b>
+      <input type="file" name="img" accept="image/*">
+    </label>
+
+    <button type='submit'>Sign up</button>
+  </form>
+
+
+</div>
+
+
+</body>
+</html>

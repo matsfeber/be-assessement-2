@@ -1,0 +1,35 @@
+<%- include('head.ejs') %>
+
+<body>
+   <header>
+    <h1>Activiteiten</h1>
+   </header>
+
+    <div class='flex-container-activity'>
+
+
+
+<% data.forEach(function (activity, i) { %>
+
+              <div class='flex-detailActivity'>
+            <a href='/activity/<%= i %>'>
+               <h5 class='detailActivity'><%= activity.title %></h5>
+              <p class='detailActivityBeschrijving' ><%= activity.description %> </p>
+              <p><%= activity.date %></p>
+              <p><b><%= activity.category %></b></p>
+
+              </a>
+            </div>
+<% }) %>
+</div>
+
+
+
+
+<%- include('footer.ejs') %>
+
+
+
+
+</body>
+</html>

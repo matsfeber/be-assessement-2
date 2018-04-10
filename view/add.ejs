@@ -1,0 +1,55 @@
+ <%- include('head.ejs') %>
+
+ <body>
+    <header>
+     <h1>Toevoegen</h1>
+  </header>
+
+<div class='content'>
+
+
+  <form  action='/addActivity' method='POST'>
+
+    <label> Categorie
+      <select name='category' required>
+        <option value='wandelen'>Wandelen</option>
+        <option value='concert'>Concert</option>
+        <option value='eten'>Uit eten</option>
+      </select>
+    </label>
+
+
+    <label>Wat wilt U gaan doen
+      <input type='text' name='title' required>
+    </label>
+
+    <label> Beschrijving
+      <input type='text' name='description' required>
+    </label>
+
+
+
+    <label>
+      Datum
+      <input type='date' name='date' required>
+    </label>
+
+
+
+
+    <button type='submit'>Toevoegen</button>
+
+    </form>
+</form>
+
+</div>
+
+
+<%- include('footer.ejs') %>
+
+
+
+
+
+ </body>
+ </html>

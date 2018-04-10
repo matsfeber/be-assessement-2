@@ -1,0 +1,41 @@
+<%- include('head.ejs') %>
+
+  <body>
+    <header>
+      <h1><%= data.title %></h1>
+      <form action='/activity.ejs'>
+        <input class='backBtn' type='submit' value='vorige'>
+      </form>
+    </header>
+
+    <div class='content'>
+
+
+
+      <p><b>Beschrijving :</b>
+        <%= data.description %>
+      </p>
+
+      <p><b>Categorie: </b>
+        <%= data.category %>
+      </p>
+
+      <p><b>Datum: </b>
+        <%= data.date %>
+      </p>
+
+      <p><b>detailActivity met:</b></p>
+      <a href='informatie.html'>
+   <img alt='profile afbeelding' src='../images/kortpittig.jpg' class='detailActivityMet'>
+      <p>Petra</p>
+       </a>
+
+      <button class='contactBtn'>Bericht sturen</button>
+
+    </div>
+
+
+
+  </body>
+
+  </html>
