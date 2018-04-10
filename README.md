@@ -7,15 +7,21 @@ The site is in dutch.
 
 ### Screens
 The first screen lets you log-in or if you dont have an account yet, sign-up.
+<kbd>
 <img src="screens/home.png" width="400">
+</kbd>
 
 The register page looks like this, you need to fill in your name, age, gender, preference, what you are looking for, email, password and a profile picture.
 
+<kbd>
 <img src="screens/register.png" width="400">
+</kbd>
 
 After you log in you land on your own profile page.Here you can see your data and if you want you can edit it. You can also log out or delete your profile.
 
+<kbd>
 <img src="screens/profile.png" width="400">
+ </kbd>
 
 
 On the activity page you can see activitys already created. You can click on an activity and see some more data. If you are interested you can send the creator of the activity a message (unfortunately messaging is not working yet)
@@ -25,7 +31,9 @@ On the activity page you can see activitys already created. You can click on an 
 
 You can navigate to "toevoegen" to add an activity
 
-<img src="screens/Add.png" width="400">
+<kbd>
+<img src="screens/Add.png" width="400"> 
+</kbd>
 
 ### Install
 
@@ -81,7 +89,7 @@ CREATE DATABASE IF NOT EXISTS mydatesite;
   ```
   Table 2 :
   ```
-  CREATE TABLE IF NOT EXISTS users (
+  CREATE TABLE IF NOT EXISTS activity (
   id INT NOT NULL AUTO_INCREMENT,
   title TEXT CHARACTER SET utf8,
   description TEXT CHARACTER SET utf8,
