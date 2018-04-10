@@ -26,8 +26,12 @@ After you log in you land on your own profile page.Here you can see your data an
 
 On the activity page you can see activitys already created. You can click on an activity and see some more data. If you are interested you can send the creator of the activity a message (unfortunately messaging is not working yet)
 
+<kbd>
 <img src="screens/activiteiten.png" width="400">
+</kbd>
+<kbd>
 <img src="screens/detail.png" width="400">
+</kbd>
 
 You can navigate to "toevoegen" to add an activity
 
@@ -102,3 +106,7 @@ CREATE DATABASE IF NOT EXISTS mydatesite;
 
 ### Use 50+Meeting
 Now you are ready to use the site, go to http://localhost:1905/. You can change the port in the index.js file if you want to.
+
+## Licence
+
+[MIT]()
